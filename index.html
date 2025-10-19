@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Magazin Online preparate din carne traditionale romanesti">
+    <meta name="keywords"
+        content="magazin carne online, preparate din carne, produse traditionale romanesti, mezeluri naturale, carne de porc, carnati afumati, pastrama, livrare carne, produse locale, produse artizanale">
+    <meta name="author" content="Luis Alexandru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resurse/css/etapa1.css">
+    <title>Magazin Online preparate din carne traditionale romanesti</title>
+
+    <link rel="icon" type="image/png" href="./resurse/ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./resurse/ico/favicon.svg" />
+    <link rel="shortcut icon" href="./resurse/ico/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Menzil" />
+    <link rel="manifest" href="./resurse/ico/site.webmanifest" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Menzil.ro</h1>
+        <!-- Navigatie -->
+        <nav aria-label="Meniu principal">
+            <ul>
+                <li>
+                    <a href="#acasa">Acasa</a>
+                    <!-- sub-optiuni (legaturi catre sectiuni interne cu id) -->
+                    <ul>
+                        <li><a href="#produse">Acasa - Produse</a></li>
+                        <li><a href="#evenimente">Acasa - Evenimente</a></li>
+                        <li><a href="#oferta">Acasa - Oferte</a></li>
+                    </ul>
+                </li>
+                <li><a href="produse.html">Produse</a></li>
+                <li><a href="despre.html">Despre noi</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section id="acasa">
+            <header>
+                <h2>Produse naturale din carne — gust traditional</h2>
+                <h3>Magazin carne online cu livrare rapida si pachete pentru gratar</h3>
+            </header>
+
+            <p>
+                Bine ati venit la <b>Menzil.ro</b>, magazin carne online specializat in <b>preparate din carne</b> si
+                <b>mezeluri naturale</b>. Gama noastra include <b>carne de porc</b>, vita, pui, <b>carnati afumati</b>
+                si
+                <b>pastrama</b> — toate produse locale, artizanale si potrivite pentru <em>gratare</em> si mese
+                traditionale.
+            </p>
+        </section>
+
+        <!-- Section nested (sectiune in sectiune) - respectare imbricare headingurilor -->
+        <section id="produse">
+            <h3>Catalog produse</h3>
+            <p>Filtre: categorie, pret, provenienta. Gasiti rapid <b>preparate din carne</b> si <b>mezeluri
+                    naturale</b>.</p>
+
+            <!-- Grupare cu p si blockquote (cerinta p, blockquote) -->
+            <p>Produse populare: carnati de casa, pastrama de porc, pachete pentru gratar.</p>
+            <blockquote cite="https://www.google.ro">„Gust autentic, ingrediente de la producatori locali” — recenzie
+                client.</blockquote>
+
+            <!-- lista cu definition list (dl) -->
+            <dl>
+                <dt>Pachet „Gratar de weekend”</dt>
+                <dd>Contine: carnati, ceafa porc, mici — suficient pentru 4 persoane.</dd>
+                <dt>Pachet „Traditional romanesc”</dt>
+                <dd>Pastrama, afumaturi si mezeluri pentru o masa autentica.</dd>
+            </dl>
+
+        </section>
+
+        <section id="oferta">
+            <h3>Oferte si pachete promotionale</h3>
+            <p>La fiecare comanda de peste 200 lei primiti transport gratuit (in aria de livrare).</p>
+
+            <h2>Calculul costului total al comenzii</h2>
+            <p>Transportul este gratuit pentru comenzile de cel puțin 200 RON. Formula de calcul este:</p>
+
+            <p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <mrow>
+                        <mi>V</mi>
+                        <mo>&gt;</mo>
+                        <mn>200</mn>
+                        <mtext> RON </mtext>
+                        <mo>&#8594;</mo>
+                        <mtext>Transport gratuit</mtext>
+                    </mrow>
+                </math>
+            </p>
+            <p>
+                Unde:
+                <br> <strong>V</strong> = valoarea comenzii (în RON)
+            </p>
+        </section>
+
+
+        <!-- Aside -->
+        <aside>
+            <h2>Nota</h2>
+            <p><strong>Atentie:</strong> Stocurile pot varia. Produsele <i>(artizanale)</i> pot avea termene limitate.
+            </p>
+        </aside>
+
+        <!-- Evenimente (cerinta: time + lista ordenata/neordonata) -->
+        <section id="evenimente">
+            <h2>Evenimente viitoare</h2>
+            <ul class="events">
+                <li>
+                    <time datetime="2025-11-05T12:00">5 noiembrie 2025, ora 12:00</time> —
+                    <b>Degustare de afumaturi</b> — oferim mostre gratuite (in functie de stoc).
+                </li>
+                <li>
+                    <time datetime="2025-12-20T10:00">20 decembrie 2025, ora 10:00</time> —
+                    <b>Targul produselor locale</b> — demonstratii de preparare.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Figure + responsive images (cerinta figure+figcaption+title+srcset pentru varianta mobil/tablet/desktop) -->
+        <section class="product-figure" aria-labelledby="fig1-title">
+            <h2 id="fig1-title">Pachet Traditional</h2>
+            <figure>
+                <img src="./resurse/imagini/img-large.png" srcset="
+                        ./resurse/imgagini/img-small.png 480w,
+                        ./resurse/imagini/img-medium.png 800w,      
+                        ./resurse/imagini/img-large.png 1200w"
+                    sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+                    alt="Pachet traditional de mezeluri si afumaturi Menzil"
+                    title="Pachet traditional Menzil — ideal pentru masa in familie">
+                <figcaption>Pachet traditional: selectie de carnati, pastrama si afumaturi.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Cerinta: marcari speciale (b, i, strong, c, s+ins, abbr, dfn, q, cite) -->
+        <section>
+            <h2>Termeni si atentionari</h2>
+            <p>Termen tehnic: <i>cold smoking</i> — metoda folosita pentru anumite <b>afumaturi</b>.</p>
+            <p><strong>Atentie:</strong> Produsele sunt perisabile.</p>
+            <p><em>Atentie:</em> Produsele pot contine alergeni.</p>
+            <p>Metoda de afumare: <s>Fum Lichid</s> <ins>Rumegus din lemn de fag</ins></p>
+            <p>Abreviere: <abbr title="Unitate de Productie Locala">UPL</abbr> — produs de <dfn
+                    title="producator local">producator local/Unitate de productie locala</dfn>.</p>
+            <p>Citat: <q cite="https://google.ro">„Calitate si traditie in fiecare felie.”</q></p>
+            <p>Titlu de lucrare: <cite>Traditii culinare romanesti — mezeluri</cite></p>
+        </section>
+
+        <!-- Linkuri -->
+        <section>
+            <h2>Linkuri utile</h2>
+            <ul>
+                <!-- link extern (deschide in tab nou) -->
+                <li>
+                    <a href="https://www.ansvsa.ro/" target="_blank" rel="noopener">ANSVSA</a>
+                </li>
+
+                <!-- link catre element dintr-o resursa externa (lung si cu  <wbr>) (deschide in tab nou)-->
+                <li>
+                    <a href="http://covasna.dsvsa.ro/operatori-economici/unitati-inregistrate/unitati-inregistrate-produse-de-origine-animala"
+                        target="_blank">
+                        http://covasna.dsvsa.ro/operatori-economici/unitati-inregistrate/<wbr>
+                    unitati-inregistrate-produse-de-origine-animala
+                    </a>
+                </li>
+
+                <!-- link care contine o imagine; la click deschide versiunea mare in tab curent -->
+                <li>
+                    <a href="./resurse/imagini/img-large.png">
+                        <img src="./resurse/imagini/img-medium.png" alt="Previzualizare pachet"
+                            style="max-width:150px;">
+                    </a>
+                </li>
+
+                <!-- link download cu alt nume (download attribute) -->
+                <li>
+                    <a href="./resurse/fisiere/preparare.pdf" download="preparare.pdf">Descarca manualul de preparare al
+                        mezelurilor in gospodarie (fisier PDF)</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Iframe YouTube embed + linkuri (toate deschid in iframe) -->
+        <section id="video">
+            <h2>Prezentari video</h2>
+            <div class="controls">
+                <!-- link-uri care trebuie sa incarce videoclipuri in iframe  -->
+                <a href="https://www.youtube.com/embed/Csu7ETbWm78" target="videoFrame">Video 1 — Salam Traditional
+                    Italian </a> |
+                <a href="https://www.youtube.com/embed/7O_5KVr7Nxs" target="videoFrame">Video 2 — Salam de casa </a> |
+                <a href="https://www.youtube.com/embed/4JuKUlMhQG8" target="videoFrame">Video 3 - Carnati Nemtesti</a>
+            </div>
+            <iframe name="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/Csu7ETbWm78"
+                title="Menzil video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+
+
+        <!-- Tabel (cerinta: caption, thead, tbody, tfoot, min 5 randuri, 4 coloane; colspan/rowspan) -->
+        <section>
+            <h2>Top produse vandute</h2>
+            <table>
+                <caption>Top 5 produse vandute in ultimele 30 de zile</caption>
+                <thead>
+                    <tr>
+                        <th>Loc</th>
+                        <th>Produs</th>
+                        <th>Categorie</th>
+                        <th>Vanzari (buc)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pastrama de porc</td>
+                        <td>Afumaturi</td>
+                        <td>420</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carnati de casa</td>
+                        <td>Mezeluri</td>
+                        <td>380</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ceafa pentru gratar</td>
+                        <td>Carne proaspata</td>
+                        <td>360</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">4-5</td>
+                        <td colspan="2">Pachet promotional „Gratar de weekend”</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <!-- rand suplimentar pentru a ajunge la 5 randuri -->
+                        <td>Productie locala (mix)</td>
+                        <td>Mix</td>
+                        <td>290</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Date generate la nivel intern</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Details / summary multiple (cerinta) -->
+        <section>
+            <h2>Intrebari frecvente</h2>
+            <details>
+                <summary>Care sunt metodele de plata?</summary>
+                <p> Plata se poate face cu cardul online, ramburs la livrare sau prin transfer bancar.</p>
+            </details>
+            <details>
+                <summary>Cat dureaza livrarea?</summary>
+                <p>Livrarea in aria locala se face in 24-48h, iar in restul tarii 48-72h, in functie de zona.</p>
+            </details>
+            <details>
+                <summary>Unde regasesc termenii si conditiile site-ului?</summary>
+                <p>
+                    <embed src="./resurse/fisiere/preparare.pdf" type="application/pdf" width="700" height="600">
+                </p>
+            </details>
+        </section>
+
+        <!-- Meter (cerinta: folosit de 2 ori, unul sub low, altul peste high) -->
+        <section>
+            <h2>Capacitate & recenzii</h2>
+            <p>Participanti confirmati la degustare:</p>
+            <meter min="0" max="200" low="50" high="150" optimum="100" value="30">30/200</meter>
+            <p>Recenzie ziar local (scor):</p>
+            <meter min="0" max="10" low="3" high="8" optimum="9" value="9.2">9.2/10</meter>
+        </section>
+    </main>
+
+    <!-- FOOTER (cerinte: address cu tel/mail/Google Maps/whatsapp; link la inceputul paginii; copyright small + time) -->
+    <footer>
+        <address>
+            Telefon: <a href="tel:+40721222222">+40 721 222 222</a><br>
+            Adresa: <a href="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica" target="_blank"
+                rel="noopener">Str. Academiei 14<br>Sectorul 1, Bucuresti</a><br>
+            E-mail: <a href="mailto:contact@menzil.ro">contact@menzil.ro</a><br>
+            Chat: <a href="https://wa.me/+40721222222" target="_blank" rel="noopener">WhatsApp</a><br>
+
+
+            <img src="./resurse/imagini/harta.png" alt="Harta" usemap="#harta" id="harta-img">
+
+            <map name="harta" id="harta">
+                <!-- rect: x1,y1,x2,y2 -->
+                <area shape="circle" coords="150,200,60" href="https://fmi.unibuc.ro" target="_blank" alt="Adresa"
+                    tabindex="0">
+            </map>
+
+        </address>
+
+        <p><a href="#acasa">Inapoi sus!</a></p>
+
+        <small>&copy; <time datetime="2025-10-12"> 2025</time> www.menzil.ro — Toate drepturile rezervate.</small>
+    </footer>
+
+</body>
+
+</html>
